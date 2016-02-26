@@ -1,18 +1,21 @@
 /*************************************************************************
-  > File Name   : t5.c
+  > File Name   : main.c
   > Author      : zfx
-  > Created Time: 2016年02月16日 星期二 03时48分07秒
+  > Created Time: 2016年02月18日 星期四 22时08分32秒
  ************************************************************************/
 #include<stdio.h>
 #include<stdlib.h>
-#include<string.h>
 
-#include"sameString.h"
+int fun( void )
+{
+    static int counter = 1;
+    return ++counter;
+}
 
 int main()
 {
-    if( -1 )
-        printf("!!!!!!!!n");
-    printGet();
+    int answer;
+    answer = fun() - fun() * fun();
+    printf("%d\n", answer );
     return EXIT_SUCCESS;
 }

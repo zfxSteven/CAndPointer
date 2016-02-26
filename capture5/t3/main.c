@@ -1,18 +1,17 @@
 /*************************************************************************
-  > File Name   : t5.c
+  > File Name   : main.c
   > Author      : zfx
-  > Created Time: 2016年02月16日 星期二 03时48分07秒
+  > Created Time: 2016年02月26日 星期五 15时17分32秒
  ************************************************************************/
 #include<stdio.h>
 #include<stdlib.h>
-#include<string.h>
 
-#include"sameString.h"
+#include"reverseBits.h"
 
 int main()
 {
-    if( -1 )
-        printf("!!!!!!!!n");
-    printGet();
+    unsigned int inputV = 25;
+    printf("before:%u\t",inputV);
+    printf("after:%u\n", reverse_bits( inputV ));
     return EXIT_SUCCESS;
 }
